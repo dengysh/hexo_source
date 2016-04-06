@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Dys&#39;s blog</title>
+  <subtitle>keep going on!</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-04-05T14:19:21.465Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Dys</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git常用命令</title>
+    <link href="http://yoursite.com/2016/04/05/1604051/"/>
+    <id>http://yoursite.com/2016/04/05/1604051/</id>
+    <published>2016-04-05T14:13:38.000Z</published>
+    <updated>2016-04-05T14:19:21.465Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Git基本常用命令如下：&quot;&gt;&lt;a href=&quot;#Git基本常用命令如下：&quot; class=&quot;headerlink&quot; title=&quot;Git基本常用命令如下：&quot;&gt;&lt;/a&gt;&lt;p align=&quot;left&quot;&gt;&lt;strong&gt;Git&lt;/strong&gt;&lt;strong&gt;基本常用命令如下：&lt;/strong&gt;&lt;/p&gt;&lt;/h2&gt;&lt;p align=&quot;left&quot;&gt;   mkdir：         XX (创建一个空目录 XX指目录名)&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   pwd：          显示当前目录的路径。&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git init          把当前的目录变成可以管理的git仓库，生成隐藏.git文件。&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git add XX       把xx文件添加到暂存区去。&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git commit –m “XX”  提交文件 –m 后面的是注释。&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git status        查看仓库状态&lt;/p&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git diff  XX      查看XX文件修改了那些内容&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git log          查看历史记录&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git reset  &amp;#8211;hard HEAD^ 或者 git reset  &amp;#8211;hard HEAD~ 回退到上一个版本&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;                        (如果想回退到100个版本，使用git reset –hard HEAD~100 )&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   cat XX         查看XX文件内容&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git reflog       查看历史记录的版本号id&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git checkout &amp;#8212; XX  把XX文件在工作区的修改全部撤销。&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git rm XX          删除XX文件&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git remote add origin &lt;a href=&quot;https://github.com/dengysh/hexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/dengysh/hexo&lt;/a&gt; 关联一个远程库&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git push –u(第一次要用-u 以后不需要) origin master 把当前master分支推送到远程库&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git clone &lt;a href=&quot;https://github.com/dengysh/hexo&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/dengysh/hexo&lt;/a&gt;  从远程库中克隆&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git checkout –b dev  创建dev分支 并切换到dev分支上&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git branch  查看当前所有的分支&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git checkout master 切换回master分支&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git merge dev    在当前的分支上合并dev分支&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git branch –d dev 删除dev分支&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git branch name  创建分支&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git stash 把当前的工作隐藏起来 等以后恢复现场后继续工作&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git stash list 查看所有被隐藏的文件列表&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git stash apply 恢复被隐藏的文件，但是内容不删除&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git stash drop 删除文件&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git stash pop 恢复文件的同时 也删除文件&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git remote 查看远程库的信息&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git remote –v 查看远程库的详细信息&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git push origin master  Git会把master分支推送到远程库对应的远程分支上&lt;/p&gt;
+
+
+
+
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Git基本常用命令如下：&quot;&gt;&lt;a href=&quot;#Git基本常用命令如下：&quot; class=&quot;headerlink&quot; title=&quot;Git基本常用命令如下：&quot;&gt;&lt;/a&gt;&lt;p align=&quot;left&quot;&gt;&lt;strong&gt;Git&lt;/strong&gt;&lt;strong&gt;基本常用命令如下：&lt;/strong&gt;&lt;/p&gt;&lt;/h2&gt;&lt;p align=&quot;left&quot;&gt;   mkdir：         XX (创建一个空目录 XX指目录名)&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   pwd：          显示当前目录的路径。&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git init          把当前的目录变成可以管理的git仓库，生成隐藏.git文件。&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git add XX       把xx文件添加到暂存区去。&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git commit –m “XX”  提交文件 –m 后面的是注释。&lt;/p&gt;&lt;br&gt;&lt;p align=&quot;left&quot;&gt;   git status        查看仓库状态&lt;/p&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>github避免重复输入用户名密码</title>
+    <link href="http://yoursite.com/2016/04/04/1604043/"/>
+    <id>http://yoursite.com/2016/04/04/1604043/</id>
+    <published>2016-04-04T14:58:28.000Z</published>
+    <updated>2016-04-04T15:46:19.403Z</updated>
+    
+    <content type="html">&lt;p&gt;　　在大家使用github的过程中，一定会碰到这样一种情况，就是每次要push 和pull时总是要输入github的账号和密码，这样不仅浪费了大量的时间且降低了工作效率。在此背景下，本文在网上找了两种方法来避免这种状况，这些成果也是先人提出来的，在此只是做个总结。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h4&gt;&lt;span style=&quot;color: blue; font-size: 18pt;&quot;&gt;1.方法一&lt;/span&gt;&lt;/h4&gt;&lt;br&gt;&lt;strong&gt;1.1 创建文件存储GIT用户名和密码&lt;/strong&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;在%HOME%目录中，一般为C:\users\Administrator，也可以是你自己创建的系统用户名目录，反正都在C:\users\中。文件名为.git-credentials,由于在Window中不允许直接创建以”.”开头的文件，所以需要借助git bash进行，打开git bash客户端，进行%HOME%目录，然后用touch创建文件 .git-credentials&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;touch .git-credentials&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;用vim编辑此文件&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;vim .git-credentials&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;输入内容格式：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://{username}:{password}@github.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://{username}:{password}@github.com&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;1.2 添加Git Config 内容&lt;/strong&gt;&lt;br&gt;进入git bash终端， 输入如下命令：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git config --global credential.helper store&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;执行完后查看%HOME%目录下的.gitconfig文件，会多了一项：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[credential]&lt;br&gt;helper = store&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;重新开启git bash会发现git push时不用再输入用户名和密码&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h4&gt;&lt;span style=&quot;color: blue; font-size: 18pt;&quot;&gt;2.方法二&lt;/span&gt;&lt;/h4&gt;&lt;br&gt;&lt;strong&gt;2.1 添加环境变量&lt;/strong&gt;&lt;br&gt;在windows中添加一个HOME环境变量，变量名:HOME,变量值：%USERPROFILE%&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/large/bcd92541gw1f2l2oxk3vsj209s03ygls.jpg&quot; alt=&quot;&quot;&gt;&lt;br&gt;&lt;strong&gt;2.2 创建git用户名和密码存储文件&lt;/strong&gt;&lt;br&gt;进入%HOME%目录，新建一个名为”_netrc”的文件，文件中内容格式如下：&lt;p&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;machine {git account name}.github.com&lt;br&gt;login your-usernmae&lt;br&gt;password your-password&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;重新打开git bash即可，无需再输入用户名和密码&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;　　在大家使用github的过程中，一定会碰到这样一种情况，就是每次要push 和pull时总是要输入github的账号和密码，这样不仅浪费了大量的时间且降低了工作效率。在此背景下，本文在网上找了两种方法来避免这种状况，这些成果也是先人提出来的，在此只是做个总结。&lt;/p&gt;
+&lt;p&gt;&lt;h4&gt;&lt;span style=&quot;color: blue; font-size: 18pt;&quot;&gt;1.方法一&lt;/span&gt;&lt;/h4&gt;&lt;br&gt;&lt;strong&gt;1.1 创建文件存储GIT用户名和密码&lt;/strong&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML-mailto用法</title>
+    <link href="http://yoursite.com/2016/04/04/20160404HTML-mailto%E7%94%A8%E6%B3%95/"/>
+    <id>http://yoursite.com/2016/04/04/20160404HTML-mailto用法/</id>
+    <published>2016-04-04T14:04:14.000Z</published>
+    <updated>2016-04-04T14:22:10.014Z</updated>
+    
+    <content type="html">&lt;p&gt;使用&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;mailto:sample@163.com&lt;/span&gt;&amp;gt;&lt;/span&gt;send email&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;或者&lt;br&gt;&lt;code&gt;&amp;lt;form action=&amp;quot;mailto:sample@163.com&amp;quot;&amp;gt;
+    ...
+&amp;lt;/form&amp;gt;&lt;/code&gt;&lt;br&gt;mailto后跟的是收信人&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;可使用参数列表&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;to&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;收信人&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;subject&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;收信人&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;cc&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;抄送&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;bcc&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;暗送&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;body&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;内容&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;参数传递方式同页面之间传递值一样，可以使用查询字符串，也可以用form&lt;br&gt;querystring方式：&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;mailto:sample@163.com?subject=test&amp;amp;cc=sample@hotmail.com&amp;amp;body=use mailto sample&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;send mail&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;form方式：&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;form&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;sendmail&#39;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;action&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;mailto:sample@163.com&#39;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;cc&#39;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;text&#39;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;sample@hotmail.com&#39;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;subject&#39;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;text&#39;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;test&#39;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;input&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;name&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;body&#39;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;type&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;text&#39;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;value&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&#39;use mailto sample&#39;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;form&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;两种方式同样传递所有参数。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;使用&lt;br&gt;&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;mailto:sample@163.com&lt;/span&gt;&amp;gt;&lt;/span&gt;send email&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;或者&lt;br&gt;&lt;code&gt;&amp;lt;form action=&amp;quot;mailto:sample@163.com&amp;quot;&amp;gt;
+    ...
+&amp;lt;/form&amp;gt;&lt;/code&gt;&lt;br&gt;mailto后跟的是收信人&lt;br&gt;
+    
+    </summary>
+    
+      <category term="HTML" scheme="http://yoursite.com/categories/HTML/"/>
+    
+    
+      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="HTML" scheme="http://yoursite.com/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Notepad++使用小技巧</title>
+    <link href="http://yoursite.com/2016/04/04/20160404notepad%E4%BD%BF%E7%94%A8%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <id>http://yoursite.com/2016/04/04/20160404notepad使用小技巧/</id>
+    <published>2016-04-04T13:51:26.000Z</published>
+    <updated>2016-04-04T14:02:55.225Z</updated>
+    
+    <content type="html">&lt;p&gt;1. 把 Notepad++ 变成便笺&amp;nbsp;&lt;/p&gt;&lt;br&gt;&lt;p&gt;调整Notepad++的窗口尺寸，然后按键盘上的F12，当前的本文编辑器将会一直显示在所有其它窗口的前方，工具栏/菜单栏也会隐藏，就变成了一个便笺。&amp;nbsp;&lt;/p&gt;&lt;p&gt;如果您想返回到原有的窗口，再次按F12键即可。&amp;nbsp;&lt;/p&gt;&lt;p&gt;2. 如何在Notepad++中使用列模式&amp;nbsp;&lt;/p&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;p&gt;Alt + 鼠标拖动，就可以实现列模式&lt;/p&gt;&lt;p&gt;Alt + C &amp;nbsp;实现列模式插入&lt;/p&gt;&lt;p&gt;3. 如何在Notepad++中同时编辑两个文件&amp;nbsp;&lt;/p&gt;&lt;br&gt;&lt;p&gt;打开您想要同时编辑的两份文件。右击其中任何一份文件的选项卡，选中“移动到另一视图”，整个屏幕会划分成两部分。可以选择【视图】菜单下的【垂直同步滚动】或【水平同步滚动】选项，来同时操作两个文件。&amp;nbsp;&lt;/p&gt;&lt;br&gt;&lt;p&gt;4. 在编辑模式中切换纵向拆分和横向拆分方式&amp;nbsp;&lt;/p&gt;&lt;p&gt;当您同时编辑两份文件时（在两个视图中查看），既可以纵向拆分查看，也可以横向拆分查看，请右键点击拆分视图中间的分隔栏，然后选中“向右旋转”或者“向左旋转”，即可切换横向或纵向模式。&amp;nbsp;&lt;/p&gt;&lt;p&gt;5. 删除空行&lt;/p&gt;&lt;p&gt;删除空行（不包括有空格的空行）&lt;/p&gt;&lt;p&gt;按ctrl+h，跳出搜索替换框，把查找模式定义为扩展（\n，\r…）&amp;nbsp;&lt;/p&gt;&lt;p&gt;查找目标：\r\n\r\n&amp;nbsp;&lt;/p&gt;&lt;p&gt;替换为：\r\n&lt;/p&gt;&lt;p&gt;删除空行（全是空格的空行 ）&lt;/p&gt;&lt;p&gt;在菜单编辑中找到Blank Operations（行编辑），点击移除行尾空白，再用下面的方法删除空行。&lt;/p&gt;&lt;p&gt;按ctrl+h，跳出搜索替换框，把查找模式定义为扩展（\n，\r…）&amp;nbsp;&lt;/p&gt;&lt;p&gt;查找目标：\r\n\r\n&amp;nbsp;&lt;/p&gt;&lt;p&gt;替换为：\r\n&lt;/p&gt;&lt;p&gt;6.书签功能&lt;/p&gt;&lt;p&gt;书签功能在长长的文本中是非常实用的。在Notepad++中，我们可点击行号右侧的区域，便会出现一个书签标记，标记书签之后我们便可用通过F2键快速定位到相应的文本行。此外，我们标记的书签在关闭文档重新打开后，仍然是有效的。&lt;/p&gt;
+
+&lt;p&gt;来自&lt;a href=&quot;http://www.easytd.com/gongjufangfa/d_14111621218.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.easytd.com/gongjufangfa/d_14111621218.html&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;1. 把 Notepad++ 变成便笺&amp;nbsp;&lt;/p&gt;&lt;br&gt;&lt;p&gt;调整Notepad++的窗口尺寸，然后按键盘上的F12，当前的本文编辑器将会一直显示在所有其它窗口的前方，工具栏/菜单栏也会隐藏，就变成了一个便笺。&amp;nbsp;&lt;/p&gt;&lt;p&gt;如果您想返回到原有的窗口，再次按F12键即可。&amp;nbsp;&lt;/p&gt;&lt;p&gt;2. 如何在Notepad++中使用列模式&amp;nbsp;&lt;/p&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="notepad" scheme="http://yoursite.com/categories/notepad/"/>
+    
+    
+      <category term="技巧" scheme="http://yoursite.com/tags/%E6%8A%80%E5%B7%A7/"/>
+    
+      <category term="notepad" scheme="http://yoursite.com/tags/notepad/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>npm包管理</title>
+    <link href="http://yoursite.com/2016/04/04/npm%E5%8C%85%E7%AE%A1%E7%90%86/"/>
+    <id>http://yoursite.com/2016/04/04/npm包管理/</id>
+    <published>2016-04-04T03:44:53.000Z</published>
+    <updated>2016-04-04T13:45:19.624Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;div&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;h2&gt;NPM是什么&lt;/h2&gt;&lt;br&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;NPM（node package manager），通常称为node包管理器。顾名思义，它的主要功能就是管理node包，包括：安装、卸载、更新、查看、搜索、发布等。&lt;/p&gt;&lt;br&gt;&lt;p&gt;npm的背后，是基于couchdb的一个数据库，详细记录了每个包的信息，包括作者、版本、依赖、授权信息等。它的一个很重要的作用就是：将开发者从繁琐的包管理工作（版本、依赖等）中解放出来，更加专注于功能的开发。&lt;/p&gt;&lt;br&gt;&lt;p&gt;npm官网：&lt;a href=&quot;https://npmjs.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://npmjs.org/&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;p&gt;npm官方文档：&lt;a href=&quot;https://npmjs.org/doc/README.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://npmjs.org/doc/README.html&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;h2&gt;我们需要了解什么&lt;/h2&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;ol&gt;&lt;br&gt;&lt;li&gt;npm的安装、卸载、升级、配置&lt;/li&gt;&lt;br&gt;&lt;br&gt;&lt;li&gt;npm的使用：package的安装、卸载、升级、查看、搜索、发布&lt;/li&gt;&lt;br&gt;&lt;li&gt;npm包的安装模式：本地 vs 全局&lt;/li&gt;&lt;br&gt;&lt;li&gt;package.json：包描述信息&lt;/li&gt;&lt;br&gt;&lt;li&gt;package版本：常见版本声明形式&lt;/li&gt;&lt;br&gt;&lt;/ol&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;h2&gt;npm包安装模式&lt;/h2&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;在具体介绍npm包的管理之前，我们首先得来了解一下npm包的两种安装模式。&lt;/p&gt;&lt;br&gt;&lt;h3&gt;本地安装 vs 全局安装（重要）&lt;/h3&gt;&lt;br&gt;&lt;p&gt;node包的安装分两种：本地安装、全局安装。两者的区别如下，后面会通过简单例子说明&lt;/p&gt;&lt;br&gt;&lt;ul&gt;&lt;br&gt;&lt;li&gt;本地安装：package会被下载到当前所在目录，也只能在当前目录下使用。&lt;/li&gt;&lt;br&gt;&lt;li&gt;全局安装：package会被下载到到特定的系统目录下，安装的package能够在所有目录下使用。&lt;/li&gt;&lt;br&gt;&lt;/ul&gt;&lt;br&gt;&lt;h3&gt;npm install pkg - 本地安装&lt;/h3&gt;&lt;br&gt;&lt;p&gt;运行如下命令，就会在当前目录下安装&lt;code&gt;grunt-cli&lt;/code&gt;（grunt命令行工具）&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install grunt-cli&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;安装结束后，当前目录下回多出一个&lt;code&gt;node_modules&lt;/code&gt;目录，grunt-cli就安装在里面。同时注意控制台输出的信息：&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;a href=&quot;mailto:grunt-cli@0.1.9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;grunt-cli@0.1.9&lt;/a&gt; node_modules/grunt-cli&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;├── &lt;a href=&quot;mailto:resolve@0.3.1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;resolve@0.3.1&lt;/a&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;├── &lt;a href=&quot;mailto:nopt@1.0.10&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;nopt@1.0.10&lt;/a&gt; (&lt;a href=&quot;mailto:abbrev@1.0.4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;abbrev@1.0.4&lt;/a&gt;)&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;└── &lt;a href=&quot;mailto:findup-sync@0.1.2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;findup-sync@0.1.2&lt;/a&gt; (&lt;a href=&quot;mailto:lodash@1.0.1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;lodash@1.0.1&lt;/a&gt;, &lt;a href=&quot;mailto:glob@3.1.21&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;glob@3.1.21&lt;/a&gt;)&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;简单说明一下：&lt;/p&gt;&lt;br&gt;&lt;ul&gt;&lt;br&gt;&lt;li&gt;grunt-cli@0.1.9：当前安装的package为grunt-cli，版本为0.19&lt;/li&gt;&lt;br&gt;&lt;li&gt;node_modules/grunt-cli：安装目录&lt;/li&gt;&lt;br&gt;&lt;li&gt;resolve@0.3.1：依赖的包有resolve、nopt、findup-sync，它们各自的版本、依赖在后面的括号里列出来&lt;/li&gt;&lt;br&gt;&lt;/ul&gt;&lt;br&gt;&lt;h3&gt;npm install -g pkg- 全局安装&lt;/h3&gt;&lt;br&gt;&lt;p&gt;上面已经安装了grunt-cli，然后你跑到其他目录下面运行如下命令&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;grunt&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;果断提示你grunt命令不存在，为什么呢？因为上面只是进行了&lt;strong&gt;本地安装&lt;/strong&gt;，grunt命令只能在对应安装目录下使用。&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;-bash: grunt: command not found&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;如果为了使用grunt命令，每到一个目录下都得重新安装一次，那不抓狂才怪。肿么办呢？&lt;/p&gt;&lt;br&gt;&lt;p&gt;很简单，采用全局安装就行了，很简单，加上参数&lt;code&gt;-g&lt;/code&gt;就可以了&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install -g grunt-cli&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;于是，在所有目录下都可以无压力使用&lt;code&gt;grunt&lt;/code&gt;命令了。这个时候，你会注意到控制台输入的信息有点不同。主要的区别在于安装目录，现在变成了&lt;code&gt;/usr/local/lib/node_modules/grunt-cli&lt;/code&gt;，&lt;code&gt;/usr/local/lib/node_modules/&lt;/code&gt;也就是之前所说的全局安装目录啦。&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;a href=&quot;mailto:grunt-cli@0.1.9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;grunt-cli@0.1.9&lt;/a&gt; /usr/local/lib/node_modules/grunt-cli&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;├── &lt;a href=&quot;mailto:resolve@0.3.1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;resolve@0.3.1&lt;/a&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;├── &lt;a href=&quot;mailto:nopt@1.0.10&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;nopt@1.0.10&lt;/a&gt; (&lt;a href=&quot;mailto:abbrev@1.0.4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;abbrev@1.0.4&lt;/a&gt;)&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;└── &lt;a href=&quot;mailto:findup-sync@0.1.2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;findup-sync@0.1.2&lt;/a&gt; (&lt;a href=&quot;mailto:lodash@1.0.1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;lodash@1.0.1&lt;/a&gt;, &lt;a href=&quot;mailto:glob@3.1.21&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;glob@3.1.21&lt;/a&gt;)&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;h2&gt;npm包管理&lt;/h2&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;npm的包管理命令是使用频率最高的，所以也是我们需要牢牢记住并熟练使用的。其实无非也就是几个动作：安装、卸载、更新、查看、搜索、发布等。&lt;/p&gt;&lt;br&gt;&lt;h3&gt;安装最新版本的grunt-cli&lt;/h3&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install grunt-cli&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;安装0.1.9版本的grunt-cli&lt;/h3&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install &lt;a href=&quot;mailto:grunt-cli@%220.1.9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;grunt-cli@”0.1.9&lt;/a&gt;“&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;通过package.json进行安装&lt;/h3&gt;&lt;br&gt;&lt;p&gt;如果我们的项目依赖了很多package，一个一个地安装那将是个体力活。我们可以将项目依赖的包都在package.json这个文件里声明，在搭建hexo时，就可以修改目录下的package.json，添加想要的包/hexo插件，然后一行命令就可以安装所有项目依赖的包。&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;其他package安装命令&lt;/h3&gt;&lt;br&gt;&lt;p&gt;运行如下命令，列出所有&lt;code&gt;npm install&lt;/code&gt;可能的参数形式&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install –help&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;输出如下，有兴趣的童鞋可以了解下&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install &amp;lt;tarball file&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install &amp;lt;tarball url&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install &amp;lt;folder&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install &amp;lt;pkg&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install &amp;lt;pkg&amp;gt;@&amp;lt;tag&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install &amp;lt;pkg&amp;gt;@&amp;lt;version&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install &amp;lt;pkg&amp;gt;@&amp;lt;version range&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;卸载grunt-cli&lt;/h3&gt;&lt;br&gt;&lt;p&gt;比如卸载grunt-cli&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm uninstall grunt-cli&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;卸载0.1.9版本的grunt-cli&lt;/h3&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm uninstall &lt;a href=&quot;mailto:grunt-cli@%220.1.9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;grunt-cli@”0.1.9&lt;/a&gt;“&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;npm ls：查看安装了哪些包&lt;/h3&gt;&lt;br&gt;&lt;p&gt;运行如下命令，就可以查看当前目录安装了哪些package&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm ls&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;输出如下&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;/private/tmp/npm&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;└─┬ &lt;a href=&quot;mailto:grunt-cli@0.1.9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;grunt-cli@0.1.9&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; ├─┬ &lt;a href=&quot;mailto:findup-sync@0.1.2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;findup-sync@0.1.2&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; │ ├─┬ &lt;a href=&quot;mailto:glob@3.1.21&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;glob@3.1.21&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; │ │ ├── &lt;a href=&quot;mailto:graceful-fs@1.2.3&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;graceful-fs@1.2.3&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; │ │ ├── &lt;a href=&quot;mailto:inherits@1.0.0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;inherits@1.0.0&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; │ │ └─┬ &lt;a href=&quot;mailto:minimatch@0.2.12&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;minimatch@0.2.12&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; │ │&amp;nbsp;&amp;nbsp; ├── &lt;a href=&quot;mailto:lru-cache@2.3.0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;lru-cache@2.3.0&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; │ │&amp;nbsp;&amp;nbsp; └── &lt;a href=&quot;mailto:sigmund@1.0.0&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sigmund@1.0.0&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; │ └── &lt;a href=&quot;mailto:lodash@1.0.1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;lodash@1.0.1&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; ├─┬ &lt;a href=&quot;mailto:nopt@1.0.10&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;nopt@1.0.10&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; │ └── &lt;a href=&quot;mailto:abbrev@1.0.4&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;abbrev@1.0.4&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&amp;nbsp; └── &lt;a href=&quot;mailto:resolve@0.3.1&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;resolve@0.3.1&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;同样，如果是要查看package的全局安装信息，加上&lt;code&gt;-g&lt;/code&gt;就可以&lt;/p&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm ls -g&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;h3&gt;npm ls pkg：查看特定package的信息&lt;/h3&gt;&lt;br&gt;&lt;p&gt;运行如下命令，输出grunt-cli的信息&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm ls grunt-cli&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;输出的信息比较有限，只有安装目录、版本，如下：&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;/private/tmp/npm&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;└── &lt;a href=&quot;mailto:grunt-cli@0.1.9&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;grunt-cli@0.1.9&lt;/a&gt; &lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;如果要查看更详细信息，可以通过&lt;code&gt;npm info pkg&lt;/code&gt;，输出的信息非常详尽，包括作者、版本、依赖等。&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm info grunt-cli&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;npm update pkg：package更新&lt;/h3&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm update grunt-cli&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;npm search pgk：搜索&lt;/h3&gt;&lt;br&gt;&lt;p&gt;输入如下命令&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm search grunt-cli&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;返回结果如下&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm http GET &lt;a href=&quot;http://registry.npmjs.org/-/all/since?stale=update_after&amp;amp;startkey=1375519407838&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://registry.npmjs.org/-/all/since?stale=update_after&amp;amp;startkey=1375519407838&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm http 200 &lt;a href=&quot;http://registry.npmjs.org/-/all/since?stale=update_after&amp;amp;startkey=1375519407838&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://registry.npmjs.org/-/all/since?stale=update&lt;em&gt;after&amp;amp;startkey=1375519407838&lt;/em&gt;&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;NAME&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DESCRIPTION&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; AUTHOR&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; DATE&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; KEYWORDS&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;grunt-cli&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; The grunt command line interface.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; =cowboy =tkellen&amp;nbsp; 2013-07-27 02:24&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;grunt-cli-dev-exitprocess The grunt command line interface.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; =dnevnik&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2013-03-11 16:19&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;grunt-client-compiler Grunt wrapper for client-compiler.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; =rubenv&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2013-03-26 09:15&amp;nbsp; gruntplugin&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;grunt-clientside&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Generate clientside js code from CommonJS modules&amp;nbsp; =jga&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2012-11-07 01:20&amp;nbsp; gruntplugin&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;npm发布&lt;/h3&gt;&lt;br&gt;&lt;p&gt;这个命令我自己也还没实际用过，不误导大家，语法如下，也可参考官方对于package发布的说明&lt;a href=&quot;https://npmjs.org/doc/developers.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://npmjs.org/doc/developers.html&lt;/a&gt;：&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm publish &amp;lt;tarball&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm publish &amp;lt;folder&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;h2&gt;NPM配置&lt;/h2&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;npm的配置工作主要是通过&lt;code&gt;npm config&lt;/code&gt;命令，主要包含增、删、改、查几个步骤，下面就以最为常用的proxy配置为例。&lt;/p&gt;&lt;br&gt;&lt;h3&gt;设置proxy&lt;/h3&gt;&lt;br&gt;&lt;p&gt;内网使用npm很头痛的一个问题就是代理，假设我们的代理是&amp;nbsp;&lt;a href=&quot;http://proxy.example.com:8080%EF%BC%8C%E9%82%A3%E4%B9%88%E5%91%BD%E4%BB%A4%E5%A6%82%E4%B8%8B%EF%BC%9A&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://proxy.example.com:8080，那么命令如下：&lt;/a&gt;&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm config set proxy &lt;a href=&quot;http://proxy.example.com:8080&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://proxy.example.com:8080&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;由于&lt;code&gt;npm config set&lt;/code&gt;命令比较常用，于是可以如下简写&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm set proxy &lt;a href=&quot;http://proxy.example.com:8080&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://proxy.example.com:8080&lt;/a&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;查看proxy&lt;/h3&gt;&lt;br&gt;&lt;p&gt;设置完，我们查看下当前代理设置&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm config get proxy&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;输出如下：&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;&lt;a href=&quot;http://proxy.example.com:8080/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://proxy.example.com:8080/&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;同样可如下简写：&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm get proxy&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;删除proxy&lt;/h3&gt;&lt;br&gt;&lt;p&gt;代理不需要用到了，那删了吧&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm delete proxy&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;查看所有配置&lt;/h3&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm config list&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;直接修改配置文件&lt;/h3&gt;&lt;br&gt;&lt;p&gt;有时候觉得一条配置一条配置地修改有些麻烦，就直接进配置文件修改了&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm config edit&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;h2&gt;关于package.json&lt;/h2&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;这货在官网似乎没有详细的描述，其实就是包的描述信息啦。假设当我们下载了node应用，这个node应用依赖于A、B、C三个包，如果没有package.json，我们需要人肉安装这个三个包（如果对版本有特定要求就更悲剧了）：&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install A&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install B&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install C&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;有了package.json，一行命令安装所有依赖。&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;npm install&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;package.json字段简介&lt;/h3&gt;&lt;br&gt;&lt;p&gt;字段相当多，但最重要的的是下面几个&lt;/p&gt;&lt;br&gt;&lt;ol&gt;&lt;br&gt;&lt;li&gt;name: package的名字（由于他会成为url的一部分，所以 non-url-safe 的字母不会通过，也不允许出现”.”、”“），最好先在&lt;a href=&quot;http://registry.npmjs.org/%E4%B8%8A%E6%90%9C%E4%B8%8B%E4%BD%A0%E5%8F%96%E7%9A%84%E5%90%8D%E5%AD%97%E6%98%AF%E5%90%A6%E5%B7%B2%E7%BB%8F%E5%AD%98%E5%9C%A8&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://registry.npmjs.org/上搜下你取的名字是否已经存在&lt;/a&gt;&lt;/li&gt;&lt;br&gt;&lt;li&gt;version: package的版本，当package发生变化时，version也应该跟着一起变化，同时，你声明的版本需要通过semver的校验（semver可自行谷歌）&lt;/li&gt;&lt;br&gt;&lt;li&gt;dependencies: package的应用依赖模块，即别人要使用这个package，至少需要安装哪些东东。应用依赖模块会安装到当前模块的node_modules目录下。&lt;/li&gt;&lt;br&gt;&lt;li&gt;devDependencies：package的开发依赖模块，即别人要在这个package上进行开发&lt;/li&gt;&lt;br&gt;&lt;li&gt;其他：参见官网&lt;/li&gt;&lt;br&gt;&lt;/ol&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;h2&gt;package版本&lt;/h2&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;在package.json里，你经常会在包名后看到类似”~0.1.0”这样的字符串，这就是包的版本啦。下面会列举最常见的版本声明形式，以及版本书写的要求：&lt;/p&gt;&lt;br&gt;&lt;h3&gt;常见版本声明形式&lt;/h3&gt;&lt;br&gt;&lt;p&gt;a、”~1.2.3” 是神马意思呢，看下面领悟&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;“~1.2.3” = “&amp;gt;=1.2.3 &amp;lt;1.3.0”&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;“~1.2” = “&amp;gt;=1.2.0 &amp;lt;1.3.0”&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;“~1” = “&amp;gt;=1.0.0 &amp;lt;1.1.0”&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;p&gt;b、”1.x.x”是什么意思呢，继续自行领悟&lt;/p&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;“1.2.x” = “&amp;gt;=1.2.0 &amp;lt;1.3.0”&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;“1.x.x” = “&amp;gt;=1.0.0 &amp;lt;2.0.0”&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;“1.2” = “1.2.x”&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;“1.x” = “1.x.x”&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;pre&gt;&lt;code&gt;“1” = “1.x.x”&lt;/code&gt;&lt;/pre&gt;&lt;br&gt;&lt;/div&gt;&lt;br&gt;&lt;h3&gt;版本书写要求&lt;/h3&gt;&lt;br&gt;&lt;ol&gt;&lt;br&gt;&lt;li&gt;版本可以v开头，比如 v1.0.1（v只是可选）&lt;/li&gt;&lt;br&gt;&lt;li&gt;1.0.1-7，这里的7是所谓的&amp;ldquo;构建版本号&amp;rdquo;，不理是神马，反正版本大于1.0.1&lt;/li&gt;&lt;br&gt;&lt;li&gt;1.0.1beta，或者1.0.1-beta，如果1.0.1后面不是 &amp;ldquo;连字符加数字&amp;rdquo; 这种形式，那么它是pre release 版本，即版本小于 1.0.1&lt;/li&gt;&lt;br&gt;&lt;li&gt;根据b、c，有：0.1.2-7 &amp;gt; 0.1.2-7-beta &amp;gt; 0.1.2-6 &amp;gt; 0.1.2 &amp;gt; 0.1.2beta&lt;/li&gt;&lt;br&gt;&lt;/ol&gt;&lt;br&gt;&lt;br&gt;&lt;p&gt;来自：&lt;a href=&quot;http://www.cnblogs.com/chyingp/p/npm.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.cnblogs.com/chyingp/p/npm.html&lt;/a&gt;&lt;/p&gt;
+
+
+
+
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;h2&gt;NPM是什么&lt;/h2&gt;&lt;br&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;NPM（node package manager），通常称为node包管理器。顾名思义，它的主要功能就是管理node包，包括：安装、卸载、更新、查看、搜索、发布等。&lt;/p&gt;&lt;br&gt;&lt;p&gt;npm的背后，是基于couchdb的一个数据库，详细记录了每个包的信息，包括作者、版本、依赖、授权信息等。它的一个很重要的作用就是：将开发者从繁琐的包管理工作（版本、依赖等）中解放出来，更加专注于功能的开发。&lt;/p&gt;&lt;br&gt;&lt;p&gt;npm官网：&lt;a href=&quot;https://npmjs.org/&quot;&gt;https://npmjs.org/&lt;/a&gt;&lt;/p&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="npm" scheme="http://yoursite.com/categories/npm/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="npm" scheme="http://yoursite.com/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo搭建blog(1)</title>
+    <link href="http://yoursite.com/2016/04/03/20160403hexo%E6%90%AD%E5%BB%BAblog1/"/>
+    <id>http://yoursite.com/2016/04/03/20160403hexo搭建blog1/</id>
+    <published>2016-04-03T13:54:39.000Z</published>
+    <updated>2016-04-03T14:56:13.602Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;搭建Hexo&quot;&gt;&lt;a href=&quot;#搭建Hexo&quot; class=&quot;headerlink&quot; title=&quot;搭建Hexo&quot;&gt;&lt;/a&gt;搭建Hexo&lt;/h1&gt;&lt;p&gt;　　hexo是一种静态网页生成器，&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官方文档&lt;/a&gt;有详细说明和安装教程，这里不再赘述。&lt;/p&gt;
+&lt;h1 id=&quot;搭建blog&quot;&gt;&lt;a href=&quot;#搭建blog&quot; class=&quot;headerlink&quot; title=&quot;搭建blog　&quot;&gt;&lt;/a&gt;搭建blog　&lt;/h1&gt;&lt;p&gt;　　这里再给出几个详细教程供参考:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://syxiaqj.github.io/categories/hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://syxiaqj.github.io/categories/hexo/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.zipperary.com/categories/hexo/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.zipperary.com/categories/hexo/&lt;/a&gt;(推荐)&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;tips&quot;&gt;&lt;a href=&quot;#tips&quot; class=&quot;headerlink&quot; title=&quot;tips&quot;&gt;&lt;/a&gt;tips&lt;/h1&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;添加网站小图标时，在&lt;a href=&quot;http://www.faviconer.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.faviconer.com&lt;/a&gt;制作好以后，它给出的链接是&lt;code&gt;&amp;lt;link href=&amp;quot;favicon.ico&amp;quot; rel=&amp;quot;shortcut icon&amp;quot; type=&amp;quot;image/x-icon&amp;quot; /&amp;gt;&lt;/code&gt;,把这个放在布局中的话，只能首页显示图标，应该加上根目录&lt;code&gt;&amp;lt;link href=&amp;quot;&amp;lt;%- config.root %&amp;gt;favicon.ico&amp;quot; rel=&amp;quot;shortcut icon&amp;quot; type=&amp;quot;image/x-icon&amp;quot; /&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;在用markdown写文章时，使用&lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt;插入文章，使得这之前的内容在主页显示，之后出现&lt;code&gt;阅读全文&lt;/code&gt; &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;各个版本的hexo使用差异很大，尽量按照官方文档来，特别在使用&lt;a href=&quot;https://hexo.io/plugins/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo插件&lt;/a&gt;的时候，尽量按照官方文档进行设置，比如在设置RSS和sitemap的时候，RSS应该按下面在&lt;code&gt;_config.yml&lt;/code&gt;中配置： &lt;/p&gt;
+&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;feed:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  type:&lt;/span&gt; atom&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  path:&lt;/span&gt; atom.xml&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  limit:&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;  hub:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;sitemap按下面配置：&lt;br&gt;&lt;figure class=&quot;highlight yml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;sitemap:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;    path:&lt;/span&gt; sitemap.xml&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;4.用npm安装插件时，如果不能正常安装，首先看一下npm版本是不是太低，还有node.js的版本，使用&lt;code&gt;npm update&lt;/code&gt;更新一下所有安装的模块儿&lt;/p&gt;
+&lt;h1 id=&quot;markdown使用&quot;&gt;&lt;a href=&quot;#markdown使用&quot; class=&quot;headerlink&quot; title=&quot;markdown使用&quot;&gt;&lt;/a&gt;markdown使用&lt;/h1&gt;&lt;p&gt;　　markdown更HTML是兼容的，也可以使用HTML中的标签属性等，比如控制图片的大小，位置等。这种标记语言并不需要特意去学，写的过程中慢慢就会熟练。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;搭建Hexo&quot;&gt;&lt;a href=&quot;#搭建Hexo&quot; class=&quot;headerlink&quot; title=&quot;搭建Hexo&quot;&gt;&lt;/a&gt;搭建Hexo&lt;/h1&gt;&lt;p&gt;　　hexo是一种静态网页生成器，&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot;&gt;官方文档&lt;/a&gt;有详细说明和安装教程，这里不再赘述。&lt;/p&gt;
+&lt;h1 id=&quot;搭建blog&quot;&gt;&lt;a href=&quot;#搭建blog&quot; class=&quot;headerlink&quot; title=&quot;搭建blog　&quot;&gt;&lt;/a&gt;搭建blog　&lt;/h1&gt;&lt;p&gt;　　这里再给出几个详细教程供参考:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://syxiaqj.github.io/categories/hexo/&quot;&gt;http://syxiaqj.github.io/categories/hexo/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.zipperary.com/categories/hexo/&quot;&gt;http://www.zipperary.com/categories/hexo/&lt;/a&gt;(推荐)
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>分享(1)</title>
+    <link href="http://yoursite.com/2016/04/03/20160403%E5%88%86%E4%BA%AB/"/>
+    <id>http://yoursite.com/2016/04/03/20160403分享/</id>
+    <published>2016-04-02T16:14:40.000Z</published>
+    <updated>2016-04-03T03:30:48.090Z</updated>
+    
+    <content type="html">&lt;p&gt;不就之前看了部电影《他是龙》，俄罗斯的一部奇幻爱情电影，剧情就不做评价了，不过感觉里面的插曲很好听，特别最后的那个插曲，配合画面很有感觉。&lt;br&gt;歌曲名：&lt;code&gt;Колыбельная тишины&lt;/code&gt; –沉默摇篮曲&lt;/p&gt;
+&lt;embed src=&quot;http://music.163.com/style/swf/widget.swf?sid=41666027&amp;type=2&amp;auto=0&amp;width=320&amp;height=66&quot; width=&quot;340&quot; height=&quot;86&quot; allownetworking=&quot;all&quot;&gt;&lt;br&gt; 
+
+&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;&lt;/p&gt;&lt;h3&gt;&lt;br&gt;        &lt;span property=&quot;v:itemreviewed&quot;&gt;他是龙 Он - дракон(2015)&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;p&gt;&lt;/p&gt;
+&lt;center&gt;&lt;br&gt;&lt;img src=&quot;/img/201604031.jpg&quot; width=&quot;300&quot; height=&quot;200&quot;&gt;&lt;br&gt;&lt;/center&gt;
+
+
+&lt;div id=&quot;info&quot;&gt;&lt;br&gt;        &lt;span&gt;&lt;span class=&quot;pl&quot;&gt;导演&lt;/span&gt;: &lt;span class=&quot;attrs&quot;&gt;&lt;a&gt;英达尔·珍杜巴耶夫&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;        &lt;span&gt;&lt;span class=&quot;pl&quot;&gt;编剧&lt;/span&gt;: &lt;span class=&quot;attrs&quot;&gt;&lt;a&gt;阿列克谢·阿尔谢尼耶夫&lt;/a&gt; / &lt;a&gt;玛丽娜·季亚琴科&lt;/a&gt; / &lt;a&gt;谢尔盖·季亚琴科&lt;/a&gt; / &amp;lt;a “&amp;gt;英达尔·珍杜巴耶夫&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;        &lt;span class=&quot;actor&quot;&gt;&lt;span class=&quot;pl&quot;&gt;主演&lt;/span&gt;: &lt;span class=&quot;attrs&quot;&gt;&lt;a&gt;马特维·雷科夫&lt;/a&gt; / &lt;a&gt;玛丽娅·波耶扎耶娃&lt;/a&gt; / &lt;a&gt;彼得·罗曼诺夫&lt;/a&gt; / &lt;a&gt;列娃·安德烈瓦伊达&lt;/a&gt; / &lt;a&gt;阿莲娜·契诃娃&lt;/a&gt; / &lt;a&gt;维多利亚·伦佐娃&lt;/a&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;        &lt;span class=&quot;pl&quot;&gt;类型:&lt;/span&gt; &lt;span property=&quot;v:genre&quot;&gt;爱情&lt;/span&gt; / &lt;span property=&quot;v:genre&quot;&gt;奇幻&lt;/span&gt; / &lt;span property=&quot;v:genre&quot;&gt;冒险&lt;/span&gt;&lt;br&gt;&lt;br&gt;        &lt;span class=&quot;pl&quot;&gt;制片国家/地区:&lt;/span&gt; 俄罗斯&lt;br&gt;&lt;br&gt;        &lt;span class=&quot;pl&quot;&gt;语言:&lt;/span&gt; 俄语&lt;br&gt;&lt;br&gt;        &lt;span class=&quot;pl&quot;&gt;上映日期:&lt;/span&gt; &lt;span property=&quot;v:initialReleaseDate&quot; content=&quot;2015-12-03(俄罗斯)&quot;&gt;2015-12-03(俄罗斯)&lt;/span&gt;&lt;br&gt;&lt;br&gt;        &lt;span class=&quot;pl&quot;&gt;片长:&lt;/span&gt; &lt;span property=&quot;v:runtime&quot; content=&quot;107&quot;&gt;107分钟&lt;/span&gt;&lt;br&gt;&lt;br&gt;        &lt;span class=&quot;pl&quot;&gt;又名:&lt;/span&gt; Драконы / On - drakon / Dragons / He’s a Dragon&lt;br&gt;&lt;br&gt;        &lt;span class=&quot;pl&quot;&gt;IMDb链接:&lt;/span&gt; &lt;a href=&quot;http://www.imdb.com/title/tt4057376&quot; target=&quot;_blank&quot; rel=&quot;nofollow&quot;&gt;tt4057376&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;b站资源&quot;&gt;&lt;a href=&quot;#b站资源&quot; class=&quot;headerlink&quot; title=&quot;b站资源&quot;&gt;&lt;/a&gt;b站资源&lt;/h2&gt;&lt;embed height=&quot;415&quot; width=&quot;544&quot; quality=&quot;high&quot; allowfullscreen=&quot;true&quot; type=&quot;application/x-shockwave-flash&quot; src=&quot;http://static.hdslb.com/miniloader.swf&quot; flashvars=&quot;aid=3887752&amp;page=1&quot; pluginspage=&quot;http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&quot;&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;不就之前看了部电影《他是龙》，俄罗斯的一部奇幻爱情电影，剧情就不做评价了，不过感觉里面的插曲很好听，特别最后的那个插曲，配合画面很有感觉。&lt;br&gt;歌曲名：&lt;code&gt;Колыбельная тишины&lt;/code&gt; –沉默摇篮曲&lt;/p&gt;
+&lt;embed 
+ src=&quot;http://music.163.com/style/swf/widget.swf?sid=41666027&amp;type=2&amp;auto=0&amp;width=320&amp;height=66&quot; width=&quot;340&quot; height=&quot;86&quot;  allowNetworking=&quot;all&quot;&gt;&lt;br&gt; &lt;/embed&gt;
+
+&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h3&gt;&lt;p&gt;&lt;h3&gt;&lt;br&gt;        &lt;span property=&quot;v:itemreviewed&quot;&gt;他是龙 Он - дракон(2015)&lt;/span&gt;&lt;br&gt;&lt;/h3&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="分享" scheme="http://yoursite.com/categories/%E5%88%86%E4%BA%AB/"/>
+    
+    
+      <category term="music" scheme="http://yoursite.com/tags/music/"/>
+    
+      <category term="movie" scheme="http://yoursite.com/tags/movie/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>First Blog</title>
+    <link href="http://yoursite.com/2016/04/01/first-blog/"/>
+    <id>http://yoursite.com/2016/04/01/first-blog/</id>
+    <published>2016-04-01T05:09:54.000Z</published>
+    <updated>2016-04-02T16:53:34.782Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;center&gt;&lt;br&gt; &lt;img src=&quot;/img/hexo-logo.png&quot; width=&quot;450&quot; height=&quot;200&quot; alt=&quot;hexo&quot;&gt;&lt;br&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;h2 id=&quot;为何要搭建这个玩意儿&quot;&gt;&lt;a href=&quot;#为何要搭建这个玩意儿&quot; class=&quot;headerlink&quot; title=&quot;为何要搭建这个玩意儿&quot;&gt;&lt;/a&gt;为何要搭建这个玩意儿&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;很久之前就有这个想法，只是没有时间&lt;/li&gt;
+&lt;li&gt;搭建个博客顺便学点儿东西&lt;/li&gt;
+&lt;li&gt;记录些东西&lt;/li&gt;
+&lt;li&gt;提升逼格？&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;关于本博客&quot;&gt;&lt;a href=&quot;#关于本博客&quot; class=&quot;headerlink&quot; title=&quot;关于本博客&quot;&gt;&lt;/a&gt;关于本博客&lt;/h2&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;用github pages服务，搭建在&lt;a href=&quot;https://github.com/dengysh/dengysh.github.io&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我的github&lt;/a&gt;上&lt;/li&gt;
+&lt;li&gt;用的&lt;a href=&quot;https://hexo.io/zh-cn/docs/index.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;hexo&lt;/a&gt;框架&lt;/li&gt;
+&lt;li&gt;感觉并不经常写blog，慢慢完善&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;center&gt;&lt;br&gt; &lt;img src=&quot;/img/hexo-logo.png&quot; width = &quot;450&quot; height = &quot;200&quot; alt=&quot;hexo&quot; /&gt;&lt;br&gt; &lt;/center&gt;&lt;/p&gt;
+&lt;h2 id=&quot;为何要搭建这个玩意儿&quot;&gt;&lt;a href=&quot;#为何要搭建这个玩意儿&quot; class=&quot;headerlink&quot; title=&quot;为何要搭建这个玩意儿&quot;&gt;&lt;/a&gt;为何要搭建这个玩意儿&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;很久之前就有这个想法，只是没有时间&lt;/li&gt;
+&lt;li&gt;搭建个博客顺便学点儿东西&lt;/li&gt;
+&lt;li&gt;记录些东西&lt;/li&gt;
+&lt;li&gt;提升逼格？
+    
+    </summary>
+    
+      <category term="other" scheme="http://yoursite.com/categories/other/"/>
+    
+    
+      <category term="其它" scheme="http://yoursite.com/tags/%E5%85%B6%E5%AE%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2016/03/30/hello-world/"/>
+    <id>http://yoursite.com/2016/03/30/hello-world/</id>
+    <published>2016-03-30T08:09:54.000Z</published>
+    <updated>2016-04-02T14:43:14.336Z</updated>
+    
+    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+</feed>
