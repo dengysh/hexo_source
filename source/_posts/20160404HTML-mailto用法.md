@@ -1,8 +1,8 @@
 ---
 title: HTML-mailto用法
 date: 2016-04-04 22:04:14
-categories: HTML
-tags: [HTML,技巧]
+categories: 前端
+tags: [html,前端]
 ---
 使用
 ``` html
